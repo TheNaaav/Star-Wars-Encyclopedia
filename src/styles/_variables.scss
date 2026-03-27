@@ -1,10 +1,11 @@
-$bg: #f6f7f9;
-$dark: #1f232a;
-$card: #ffffff;
-$border: #d9dee7;
-$text: #1d2430;
-$muted: #6c778a;
-$primary: #0d6efd;
+$bg: #000000;
+$dark: #0a0a0c;
+$card: #111115;
+$border: #333333;
+$text: #e0e0e0; /* Ljusgrå text för bra SEO och läsbarhet mot mörk bakgrund */
+$muted: #a0aabf;
+$primary: #ffe81f; /* Star Wars-gul */
+$primary-text: #000000; /* Svart text på gul bakgrund för maximal kontrast (SEO) */
 
 $container: 1100px;
 $radius: 6px;

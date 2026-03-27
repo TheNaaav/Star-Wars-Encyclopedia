@@ -5,12 +5,18 @@ html, body { height: 100%; }
 body {
   margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: $bg;
+  /* Star Wars rymd-tema */
+  background-color: $bg;
+  background-image: radial-gradient(circle at 50% 0%, #1a1a24 0%, #000000 80%);
+  background-attachment: fixed;
   color: $text;
 }
 
-a { color: $primary; text-decoration: none; }
-a:hover { text-decoration: underline; }
+a { text-decoration: none; }
+a:hover { 
+  text-decoration: none; 
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
 
 .container {
   max-width: $container;
@@ -20,5 +26,9 @@ a:hover { text-decoration: underline; }
 
 .pageTitle {
   font-size: 44px;
-  margin: 12px 0 18px;
+  margin: 12px 0 24px;
+  color: $primary;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 0 0 15px rgba(255, 232, 31, 0.4);
 }

@@ -12,8 +12,10 @@
   padding: 10px 14px;
   border-radius: $radius;
   border: 1px solid $border;
-  background: #fff;
+  background: $card;
+  color: $text;
   cursor: pointer;
+  justify-self: start;
 }
 
 .pager__btn:disabled {
@@ -23,7 +25,7 @@
 
 .pager__btn--primary {
   background: $primary;
-  color: #fff;
+  color: $primary-text;
   border-color: $primary;
   justify-self: end;
 }

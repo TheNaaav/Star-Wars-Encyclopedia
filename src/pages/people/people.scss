@@ -19,7 +19,7 @@
 .card__header {
   padding: 10px 12px;
   border-bottom: 1px solid $border;
-  background: #f8f9fb;
+  background: rgba(255, 255, 255, 0.05);
   font-weight: 700;
   font-size: 14px;
 }
@@ -80,7 +80,7 @@
   display: inline-block;
   margin-top: 10px;
   background: $primary;
-  color: #fff;
+  color: $primary-text;
   padding: 10px 14px;
   border-radius: 6px;
   font-weight: 600;
@@ -112,7 +112,7 @@
 .details__header {
   padding: 10px 12px;
   border-bottom: 1px solid $border;
-  background: #f8f9fb;
+  background: rgba(255, 255, 255, 0.05);
   font-size: 20px;
   font-weight: 800;
 }
@@ -151,7 +151,7 @@
   display: inline-block;
   padding: 2px 8px;
   border-radius: 999px;
-  background: #6c757d;
+  background: #2a2d35;
   color: #fff;
   font-size: 12px;
   font-weight: 600;
@@ -179,8 +179,8 @@
   padding: 10px 14px;
   border-radius: $radius;
   border: 1px solid $border;
-  background: #6c757d;
-  color: #fff;
+  background: #2a2d35;
+  color: $text;
   cursor: pointer;
 }
 

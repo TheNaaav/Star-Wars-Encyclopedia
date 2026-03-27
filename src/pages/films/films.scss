@@ -18,7 +18,7 @@
 
 .card__row {
   display: flex;
-  gap: 8px;
+  gap: 10px;
   align-items: center;
   padding: 8px 0;
   border-top: 1px solid $border;
@@ -30,7 +30,7 @@
   display: inline-block;
   margin-top: 12px;
   background: $primary;
-  color: #fff;
+  color: $primary-text;
   padding: 10px 14px;
   border-radius: $radius;
   font-weight: 600;
@@ -69,8 +69,8 @@
   padding: 10px 14px;
   border-radius: $radius;
   border: 1px solid $border;
-  background: #6c757d;
-  color: #fff;
+  background: #2a2d35;
+  color: $text;
   cursor: pointer;
 }
 
