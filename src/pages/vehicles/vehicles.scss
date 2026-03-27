@@ -1,0 +1,10 @@
+@import "../../styles/variables";
+
+.card {
+  &--vehicle {
+    .card__img {
+      background-color: $color-dark;
+      object-fit: contain;
+    }
+  }
+}

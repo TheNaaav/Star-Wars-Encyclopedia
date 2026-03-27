@@ -1,0 +1,199 @@
+@use "../../styles/variables" as *;
+
+/* ===== LIST VIEW ===== */
+
+.hint {
+  margin: 0 0 18px;
+  color: $muted;
+  font-size: 14px;
+}
+
+.card {
+  background: $card;
+  border: 1px solid $border;
+  border-radius: $radius;
+  overflow: hidden; /* VIKTIGT: stoppar overflow */
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+}
+
+.card__header {
+  padding: 10px 12px;
+  border-bottom: 1px solid $border;
+  background: #f8f9fb;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.card__body {
+  padding: 12px;
+}
+
+.card__row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-top: 1px solid $border;
+  font-size: 13px;
+  line-height: 1.2;
+
+  /* FIX för overflow i flex */
+  min-width: 0;
+}
+
+.card__row:first-of-type {
+  border-top: 0;
+  padding-top: 4px;
+}
+
+.ico {
+  width: 18px;
+  display: inline-flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* label: Born / Homeworld / In */
+.card__row strong {
+  min-width: 86px;
+  flex: 0 0 auto;
+  font-weight: 700;
+}
+
+/* VALUE-TEXTEN (detta fixar problemet) */
+.card__value {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+
+  /* välj EN av dessa */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  /* om du hellre vill radbryta:
+  white-space: normal;
+  word-break: break-word;
+  */
+}
+
+.card__btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: $primary;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.card__btn:hover {
+  text-decoration: none;
+  filter: brightness(0.95);
+}
+
+/* ===== DETAILS VIEW ===== */
+
+.details {
+  display: flex;
+  justify-content: center;
+}
+
+.details__card {
+  width: 100%;
+  max-width: 980px;
+  background: $card;
+  border: 1px solid $border;
+  border-radius: $radius;
+  padding-bottom: 12px;
+  overflow: hidden;
+}
+
+.details__header {
+  padding: 10px 12px;
+  border-bottom: 1px solid $border;
+  background: #f8f9fb;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.sectionTitle {
+  margin: 18px 12px 10px;
+  font-size: 16px;
+}
+
+.kv {
+  padding: 0 12px;
+}
+
+.kv__row {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  padding: 8px 0;
+  border-top: 1px solid $border;
+  font-size: 14px;
+}
+
+.kv__row:first-child {
+  border-top: 0;
+}
+
+.kv__key {
+  font-weight: 700;
+  color: $text;
+}
+
+.kv__val {
+  color: $text;
+}
+
+.pill {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #6c757d;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.singleLink {
+  padding: 0 12px;
+  margin-bottom: 6px;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  align-items: center;
+}
+
+.singleLink__key {
+  font-weight: 700;
+}
+
+.singleLink__val {
+  color: $primary;
+  font-weight: 600;
+}
+
+.backBtn {
+  margin: 14px 12px 0;
+  padding: 10px 14px;
+  border-radius: $radius;
+  border: 1px solid $border;
+  background: #6c757d;
+  color: #fff;
+  cursor: pointer;
+}
+
+.backBtn:hover {
+  filter: brightness(0.95);
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 640px) {
+  .kv__row,
+  .singleLink {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}

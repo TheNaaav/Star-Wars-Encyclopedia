@@ -1,0 +1,40 @@
+@use "../../styles/variables" as *;
+
+.nav {
+  background: $dark;
+  color: #fff;
+}
+
+.nav__inner {
+  max-width: $container;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.nav__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.nav__links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.nav__links a {
+  color: #bfc7d6;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+
+.nav__links a.active {
+  color: #fff;
+  font-weight: 600;
+}

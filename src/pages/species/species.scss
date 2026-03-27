@@ -1,0 +1,9 @@
+@import "../../styles/variables";
+
+.card {
+  &--species {
+    .card__img {
+      background-color: $color-dark;
+    }
+  }
+}

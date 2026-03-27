@@ -1,0 +1,25 @@
+@use "../../styles/variables" as *;
+
+.links__title {
+  margin: 18px 0 10px;
+  font-size: 16px;
+}
+
+.links__box {
+  background: #fff;
+  border: 1px solid $border;
+  border-radius: $radius;
+  overflow: hidden;
+}
+
+.links__row {
+  padding: 10px 12px;
+  border-top: 1px solid $border;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.links__row:first-child { border-top: 0; }
+
+.links__icon { width: 20px; display: inline-flex; justify-content: center; }
+.links__muted { color: $muted; }

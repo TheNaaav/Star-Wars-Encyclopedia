@@ -1,0 +1,10 @@
+@import "../../styles/variables";
+
+.card {
+  &--starship {
+    .card__img {
+      background-color: $color-dark;
+      object-fit: contain;
+    }
+  }
+}
